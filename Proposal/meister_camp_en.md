@@ -15,11 +15,13 @@ We also used AI, but impliment web
 ## what's need
 - Jupyter notebook
     - Complete
+    - Dynamic Programming
 - Opencv
+    - Process video, and Visualizing that
     - Complete
 - Yolo
     - Already read paper
-    - We used darknet
+    - We used darknet that pre trained
 - CNN
     - Already maked
     - VGG-19
