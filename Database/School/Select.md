@@ -14,7 +14,6 @@ select age from school where name='wonho' and class = 2
 //학교에서 이름이 원호이며 반이 2인 원호의 이름을 출력
 ```
 
-
 ```sql
 select max(age) from school where class = 2
 //학교에서 반이 2인 사람들의 최대나이를 출력
