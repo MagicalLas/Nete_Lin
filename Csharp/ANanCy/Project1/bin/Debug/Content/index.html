@@ -1,0 +1,32 @@
+<link rel="stylesheet" type="text/css" href="slide.css">
+<main id='slide'>
+    <div class="image"></div>
+    <div class="image"></div>
+    <div class="image"></div>
+    <div class="image"></div>
+    <div class="paint">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div class="info">
+
+    </div>
+</main>
+
+<script>
+    const req = new XMLHttpRequest();
+    req.addEventListener("load", () => 콘솔.log(this.responseText));
+    req.open("GET", "/test");
+    req.send();
+</script>
+<main id="form">
+    <div>Ancy - School Book Managment</div>
+    <div>Book List</div>
+    <div>Rent Book</div>
+    <div>My Book List</div>
+    <div>Library Status</div>
+    <div>Request New Book</div>
+</main>

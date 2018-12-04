@@ -1,0 +1,180 @@
+<link rel="stylesheet" type="text/css" href="/Content/slide.css">
+<main id='slide'>
+    <div class="image"></div>
+    <div class="image"></div>
+    <div class="image"></div>
+    <div class="image"></div>
+</main>
+<div id="slide" class="info"></div>
+<script>
+    const req = new XMLHttpRequest();
+    const info = document.getElementsByClassName('info')[0];
+    
+    function innerAdd(el, str) {
+        el.innerHTML = str;
+    }
+
+    function FindClass(name) {
+        return document.getElementsByClassName(name)[0];
+    }
+    function FindName(name) {
+        return document.getElementsByName(name)[0];
+    }
+
+    function GetValue(f) {
+        return (arg) => f(arg).value;
+    }
+    function WrappingInputTagValue(fineElement) {
+        return (arg) => arg + "=" + fineElement(arg);
+    }
+
+    function BookList() {
+        const header = "<div>Book List</div>";
+        req.addEventListener("load", () => innerAdd(info, header+req.responseText));
+        req.open("GET", "/BookList");
+        req.send(null);
+    }
+    function LibraryStatus() {
+        const header = "Library State : ";
+        req.addEventListener("load", () => innerAdd(info, header+req.responseText));
+        req.open("GET", "/LibraryState");
+        req.send(null);
+    }
+    function RentBookOpenForm() {
+        const header = "<div>Rent Book</div>";
+        var html = '\
+            <input type="text" name="name" placeholder="Name">\
+            <input type="text" name="grade" placeholder="Grade/Class">\
+            <input type="text" name="Booknumber" placeholder="BookNumber">\
+            <div onclick="RentBook()">Submit</div>\
+            ';
+        innerAdd(info, header+html);
+    }
+    function MyRentOpenForm() {
+        const header = "<div>My Rent</div>";
+        var html = '\
+            <input type="text" name="name" placeholder="Name">\
+            <input type="text" name="grade" placeholder="Grade/Class">\
+            <div onclick="RentList()">Submit</div>\
+            ';
+            innerAdd(info, header+html);
+    }
+    function RequestBookOpenForm() {
+        const header = "<div>Request Book</div>";
+        var html = '\
+            <input type="text" name="bookName" placeholder="BookName">\
+            <input type="text" name="auther" placeholder="Auther">\
+            <input type="text" name="price" placeholder="BookPrice">\
+            <div onclick="AddBook()">Submit</div>\
+            ';
+            innerAdd(info, header+html);
+    }
+    function DeleteRentOpenForm() {
+        const header = "<div>Delete Rent</div>";
+        var html = '\
+            <input type="text" name="name" placeholder="Name">\
+            <input type="text" name="grade" placeholder="Grade/Class">\
+            <input type="text" name="Booknumber" placeholder="BookNumber">\
+            <div onclick="DeleteRent()">Submit</div>\
+            ';
+        innerAdd(info, header+html);
+    }
+
+    function AddNewBookOpenForm() {
+        const header = "<div>New Book</div>";
+        var html = '\
+            <input type="text" name="bookName" placeholder="BookName">\
+            <input type="text" name="auther" placeholder="Auther">\
+            <input type="text" name="number" placeholder="BookNumber">\
+            <div onclick="AddNewBook()">Submit</div>\
+            ';
+            innerAdd(info, header+html);
+    }
+
+    function RentBook() {
+        const getWrappedValueByName = WrappingInputTagValue(GetValue(FindName));
+        const name = getWrappedValueByName('name');
+        const grade = getWrappedValueByName('grade');
+        const book = getWrappedValueByName('Booknumber');
+        const header = "<div>Rent Book</div>";
+        const params = name+"&"+grade+"&"+book;
+
+        req.addEventListener("load", () => innerAdd(info, header + req.responseText));
+        req.open("GET", "/RentBook?"+params,true);
+        req.send(null);
+    }
+    function RentList() {
+        const getWrappedValueByName = WrappingInputTagValue(GetValue(FindName));
+        const name = getWrappedValueByName('name');
+        const grade = getWrappedValueByName('grade');
+        const header = "<div>My Rent</div>";
+        const params = name+"&"+grade;
+
+        req.addEventListener("load", () => innerAdd(info, header + req.responseText));
+        req.open("GET", "/RentList?"+params,true);
+        req.send(null);
+    }
+    function AddBook() {
+        const getWrappedValueByName = WrappingInputTagValue(GetValue(FindName));
+        const name = getWrappedValueByName('bookName');
+        const auther = getWrappedValueByName('auther');
+        const price = getWrappedValueByName('price');
+        const header = "<div>Request Book</div>";
+        const params = name+"&"+auther+"&"+price;
+        
+        req.addEventListener("load", () => innerAdd(info, header + req.responseText));
+        req.open("GET", "/AddBook?"+params,true);
+        req.send(null);
+    }
+    function AllRequestBookList() {
+        const header = "<div>Request Book List</div>";
+        
+        req.addEventListener("load", () => innerAdd(info, header + req.responseText));
+        req.open("GET", "/AllRequestBookList?",true);
+        req.send(null);
+    }
+    function AllRentList() {
+        const header = "<div>Rent Book List</div>";
+        
+        req.addEventListener("load", () => innerAdd(info, header + req.responseText));
+        req.open("GET", "/AllRentList?",true);
+        req.send(null);
+    }
+    function DeleteRent() {
+        const getWrappedValueByName = WrappingInputTagValue(GetValue(FindName));
+        const name = getWrappedValueByName('name');
+        const grade = getWrappedValueByName('grade');
+        const book = getWrappedValueByName('Booknumber');
+        const header = "<div>Delete Rent</div>";
+        const params = name+"&"+grade+"&"+book;
+
+        req.addEventListener("load", () => innerAdd(info, header + req.responseText));
+        req.open("GET", "/DeleteRent?"+params,true);
+        req.send(null);
+    }
+    function AddNewBook() {
+        const getWrappedValueByName = WrappingInputTagValue(GetValue(FindName));
+        const name = getWrappedValueByName('bookName');
+        const grade = getWrappedValueByName('auther');
+        const book = getWrappedValueByName('number');
+        const header = "<div>Add New Book</div>";
+        const params = name+"&"+grade+"&"+book;
+
+        req.addEventListener("load", () => innerAdd(info, header + req.responseText));
+        req.open("GET", "/AddNewBook?"+params,true);
+        req.send(null);
+    }
+</script>
+
+<main id="form">
+    <div>Ancy - School Book Managment</div>
+    <div onclick="BookList()">Book List</div>
+    <div onclick="RentBookOpenForm()">Rent Book</div>
+    <div onclick="MyRentOpenForm()">My Book List</div>
+    <div onclick="LibraryStatus()">Library Status</div>
+    <div onclick="RequestBookOpenForm()">Request New Book</div>
+    <div onclick="AllRequestBookList()">Request Book List</div>
+    <div onclick="AllRentList()">Rest List</div>
+    <div onclick="AddNewBookOpenForm()">Add Book</div>
+    <div onclick="DeleteRentOpenForm()">Delete Rent</div>
+</main>
