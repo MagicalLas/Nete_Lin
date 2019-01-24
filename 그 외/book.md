@@ -2,6 +2,16 @@
   - pycon 2018발표
   - SkyNet(Study Group supported by Google) Leader
   - Brain Storming Organizer
+- Book
+  - Concreate Mathmatics
+  - SICP
+  - Programming pattern
+  - Gof's Design Pattern
+  - Effective morden C++, Effective Java 2/E, Effective C#
+  - Functional thinking
+  - The Pragmatic Programmer
+  - Refactoring
+  - Implementaion Patterns
 - 프로젝트
   - Civilizationpp
     - 인원
