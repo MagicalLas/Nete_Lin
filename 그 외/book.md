@@ -1,5 +1,7 @@
 - 대외 활동
   - pycon 2018발표
+  - SkyNet(Study Group supported by Google) Leader
+  - Brain Storming Organizer
 - 프로젝트
   - Civilizationpp
     - 인원
