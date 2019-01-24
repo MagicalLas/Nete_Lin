@@ -1,0 +1,114 @@
+- 대외 활동
+  - pycon 2018발표
+- 프로젝트
+  - Civilizationpp
+    - 인원
+      - Chris Ohk
+        - Commiter
+      - Junho Seo
+        - Commiter
+      - Wonho Ha
+        - Commiter
+    - 언어
+      - C++
+    - 기간
+      - 2018/05/01 ~ 현재
+    - 스킬
+      - AI/ML
+      - Unit Test
+      - CI/CD
+    - 목표
+      - Civilization simulator using C++ with some reinforcement learning
+    - 개발 내용
+      - Unit Test
+      - Unit System
+      - Resource System
+      - City System
+      - Map System
+    - 기대효과
+      - 여러 승리 조건을 가지는 게임에 인공지능을 적용하는 연구를 수행할 수 있습니다.
+  - GO
+    - 역할
+      - Commiter
+    - 언어
+      - Go
+    - 기간
+      - 2018/04/01 ~ 현재
+    - 스킬
+      - Docker
+      - Http, Socket
+      - GoRoutine
+      - Unit Test
+    - 목표
+      - provide examples to help understand the golang
+    - 개발 내용
+      - Unit Test
+      - Socket Server
+      - Http Server
+      - Go By Examples
+      - Dockerlize
+    - 기대효과
+      - 처음 Go를 배우는 사람들에게 많은 도움을 줄 수 있으며 예제를 실행시켜보며 서비스를 제작하는 기초 구조를 살펴볼 수 있습니다.
+  - Jakao
+    - 역할
+      - Commiter
+    - 언어
+      - Java
+    - 기간
+      - 2018/08/04 ~ 2018/12/21
+    - 스킬
+      - OOP
+      - Socket
+      - Multi Thread
+    - 목표
+      - Implement Java Socket Server for Multi User, Multi Chat Rooms, that insfired KakaoTalk
+    - 개발 내용
+      - User System
+      - Socket Server/Client
+      - Multi Threading
+      - Multi Dynamic Chat Rooms
+      - User Command
+    - 기대효과
+      - 많은 사람들이 익명으로 들어와 채팅할 수 있습니다. 직접 채팅방을 만들 수도 있으며 전혀 모르는 사람과 이야기 할 수도 있습니다.
+  - Livers
+    - 역할
+      - Commiter
+    - 언어
+      - Python
+    - 기간
+      - 2018/08/12 ~ 2018/09/26
+    - 스킬
+      - Tensorflow
+      - WGAN, DCGAN
+      - Image Processing
+      - GPU Programming
+    - 목표
+      - AI create anime character's face using GAN
+    - 개발 내용
+      - Image Proccesing
+      - DataSet Colleting Script
+      - GAN
+      - DCGAN
+      - WGAN
+      - Improve WGAN
+    - 기대효과
+      - 인공지능이 어떤 식으로 이미지를 이해하고 생성하는지 이해할 수 있습니다. 또한 생성된 이미지들을 디자인에 사용 할 수도 있습니다.
+  - HieOS
+    - 역할
+      - Commiter
+    - 언어
+      - C++, Assembly
+    - 기간
+      - 2018/09/04 ~ 현재
+    - 스킬
+      - Low Level Coding
+      - Computer Structure
+    - 목표
+      - Implament Hand Made Operating System For Myself
+    - 개발 내용
+      - Kernel
+      - Console
+      - Interrupt service routine
+      - Memory Manage System
+    - 기대효과
+      - 낮은 레벨의 시스템의 구조를 알 수 있습니다. 또한 자신만의 운영체제를 빌드하고 실행시킬 수 있습니다.
