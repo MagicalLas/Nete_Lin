@@ -5,18 +5,18 @@ SDC(SoftwareDevelopmentClup, 가칭)는 소프트웨어 개발 동아리 모임�
 ## 참가 동아리
 
 - 광주소프트웨어마이스터고등학교
-  - Sadistix
-  - BeanSiL
+  - Sadistix : 하원호
+  - BeanSiL : 박승준, 최화랑
 - 대구소프트웨어고등학교
-  - 3D Printing
+  - 3D Printing : 여동엽
 - 선린 인터넷고등학교
-  - Line
+  - Line : 손지민
 - 대덕소프트웨어마이스터고등학교
-  - 예정
+  - 미정
 - 디지털미디어고등학교
-  - 예정
+  - 미정
 - 미림정보여자고등학교
-  - 예정
+  - 미정
 
 ## 활동목적
 
